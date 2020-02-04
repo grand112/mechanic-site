@@ -2,6 +2,7 @@ body{
     background-image: url("https://images.pond5.com/glowing-red-triangle-polygons-background-footage-071472630_prevstill.jpeg");
     background-size: cover; 
     background-position: center center;
+
 }
 
 .menu{
@@ -75,11 +76,14 @@ img{
 }
 
 .bottom {
-    background-color: pink;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DF0202;
+    background-color: #090706;
     float:left;
     margin-top:2%;
     margin-bottom:2%;
-    margin-left:3%;
-    margin-right:3%;
-    
+    margin-left: 3%;
+    width:94%;
+    color:white;
 }
