@@ -8,11 +8,6 @@ body{
     border-style: solid;
     border-width: 1px;
     border-color: #DF0202;
-<<<<<<< HEAD
-    width: 100%;
-=======
-    float:left;
->>>>>>> f88b6d175ac83395abd5e50711a6428bca8e7ce0
     background-color: #090706;
 }
 
@@ -29,10 +24,12 @@ body{
 }
 
 .link{
+    white-space: nowrap;
     color:grey;
 }
 
 .name{
+    white-space: nowrap;
     text-align: center;
     color:white;
     font-family: Stencil Std, fantasy;
@@ -59,9 +56,9 @@ body{
     color:white;
 }
 
-@media (max-width: 780px){
-    .logo{
-        display: none;
+@media (max-width: 1200px){
+    .img{
+        
     }
 }
 
