@@ -12,6 +12,14 @@ for(let i=0;i<navChild.length;i++)
     });
 }
 
+let home = document.querySelector('.home');
+
+home.addEventListener('click', function(){
+    window.location.reload(true);
+});
+
+
+
 let tryMe = document.querySelector('.btn');
 let mid = document.querySelector('.mid');
 
