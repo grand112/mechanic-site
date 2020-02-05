@@ -46,11 +46,14 @@ body{
 }
 
 .mid {
-    height:800px;
     background-color: #090706;
     border-style: solid;
     border-width: 1px;
     border-color: #DF0202;
+}
+
+.doWpisu{
+    height: 250px;
 }
 
 .bottom {

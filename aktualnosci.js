@@ -6,7 +6,7 @@ let place = "Kraków";
 let content = `
                     <div class="akt container px-4 py-4 mx-auto my-4">
                         <div class="wpis row">
-                            <div class="foto col-md-4" >
+                            <div class="foto col-md-4 mb-2 d-flex justify-content-center" >
                                 <img class ="doWpisu" src="http://m7.mech.pk.edu.pl/images/stories/p_osocha.jpg">
                             </div>
                             <div class="opis col-md-8 px-2 py-4 ">
@@ -27,19 +27,20 @@ let content = `
                             </div>
                         </div>
                     </div>
-                    <div class="wiecej float-right mx-3">
-                    <button type="button" class="btn btn-dark">Wyświetl wiecej (tez wywala xD)</button>
-                    </div>
                 `;
+let button = `<div class="wiecej float-right mx-3 mb-3 ">
+                <button type="button" class="btn btn-dark">Wyświetl wiecej (osocha do nieskonczonosci)</button>
+              </div>
+              `;
 
 (function () {
-    akt.innerHTML = content;
+    akt.innerHTML = content+button;
 })();
 
+let wpis = document.querySelector('.akt');
 let wiecej = document.querySelector('.wiecej');
 wiecej.addEventListener("click", function(){
-    content += content;
-    akt.innerHTML = content;
+    wpis.insertAdjacentHTML('afterend', content)
 });
     
 
