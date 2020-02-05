@@ -12,14 +12,6 @@ for(let i=0;i<navChild.length;i++)
     });
 }
 
-let home = document.querySelector('.home');
-
-home.addEventListener('click', function(){
-    window.location.reload(true);
-});
-
-
-/*
 let kontakt = document.querySelector('.kontakt');
 let oNas = document.querySelector('.oNas');
 
@@ -29,7 +21,7 @@ oNas.addEventListener("click", toBottom);
 function toBottom(){
     window.scrollTo(0,document.body.scrollHeight);
 }
-*/
+
 
 
 

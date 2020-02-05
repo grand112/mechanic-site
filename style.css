@@ -61,6 +61,11 @@ body{
     color:white;
 }
 
+.akt{
+    background-color: blue;
+    color:white;
+}
+
 @media (max-width: 1000px){
     .img{
         width:100px;
