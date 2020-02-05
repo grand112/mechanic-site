@@ -2,7 +2,7 @@ let godz = document.querySelector('.godziny');
 let mid2 = document.querySelector('.mid');
 
 godz.addEventListener('click', function(){
-    mid.innerHTML=`
+    mid2.innerHTML=`
     <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
   <div class="card-header">Header</div>
   <div class="card-body">

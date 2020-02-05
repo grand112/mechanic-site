@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-image: url("https://images.pond5.com/glowing-red-triangle-polygons-background-footage-071472630_prevstill.jpeg");
     background-size: cover; 
@@ -28,7 +32,9 @@ body{
     color:grey;
 }
 
-.name{
+.name a{
+    text-decoration: none;
+    white-space: nowrap;
     text-align: center;
     color:white;
     font-family: Stencil Std, fantasy;
@@ -36,7 +42,7 @@ body{
 }
 
 .img{
-    width:40%;
+    width:110px;
 }
 
 .mid {
@@ -45,6 +51,7 @@ body{
     border-style: solid;
     border-width: 1px;
     border-color: #DF0202;
+    padding-top: 20px;
 }
 
 .bottom {
@@ -55,9 +62,16 @@ body{
     color:white;
 }
 
-@media (max-width: 780px){
-    .logo{
-        display: none;
+@media (max-width: 1000px){
+    .img{
+        width:100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 450px){
+    .name{
+        font-size:150%;
     }
 }
 
