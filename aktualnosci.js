@@ -4,9 +4,9 @@ let title = "Wybrano pracownika miesiąca"
 let tresc = "To powinno być skądś pobierane a nie, że se piszemy tak o w js wpisy. Nwm jescze jak to zrobić. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 let place = "Kraków";
 let content = `
-                    <div class="akt container px-4 py-4 my-4">
+                    <div class="akt container px-4 py-4 mx-auto my-4">
                         <div class="wpis row">
-                            <div class="foto col-md-4 px-5" >
+                            <div class="foto col-md-4" >
                                 <img class ="doWpisu" src="http://m7.mech.pk.edu.pl/images/stories/p_osocha.jpg">
                             </div>
                             <div class="opis col-md-8 px-2 py-4 ">
@@ -28,7 +28,7 @@ let content = `
                         </div>
                     </div>
                     <div class="wiecej float-right mx-3">
-                    <button type="button" class="btn btn-dark">Wyświetl wiecej</button>
+                    <button type="button" class="btn btn-dark">Wyświetl wiecej (tez wywala xD)</button>
                     </div>
                 `;
 
@@ -38,7 +38,8 @@ let content = `
 
 let wiecej = document.querySelector('.wiecej');
 wiecej.addEventListener("click", function(){
-    console.log('elo');
-    content =+content;
+    content += content;
     akt.innerHTML = content;
 });
+    
+
