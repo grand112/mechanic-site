@@ -61,9 +61,25 @@ body{
     color:white;
 }
 
+.doWpisu{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+}
+
 .akt{
-    background-color: blue;
+    background-color: rgb(83, 83, 88);
     color:white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DF0202;
+}
+
+.opis{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DF0202;
+    background-color: #090706;
 }
 
 @media (max-width: 1000px){
