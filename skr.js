@@ -12,12 +12,17 @@ for(let i=0;i<navChild.length;i++)
     });
 }
 
-let tryMe = document.querySelector('.btn');
-let mid = document.querySelector('.mid');
+let kontakt = document.querySelector('.kontakt');
+let oNas = document.querySelector('.oNas');
 
-tryMe.addEventListener('click', function(){
-    mid.innerHTML=`<h2>To gowno zostalo wygenerowane z jsa</h2>`;
-});
+kontakt.addEventListener("click", toBottom());
+oNas.addEventListener("click", toBottom());
+
+function toBottom(){
+    window.scrollTo(0,document.body.scrollHeight);
+}
+
+
 
 
 

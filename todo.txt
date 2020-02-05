@@ -1,2 +1,2 @@
-3. Logo ponizej 780 px szerokosci robi sie za male (zrobilem display none, mozna pomyslec cos nad tym)
+
 
