@@ -15,13 +15,12 @@ for(let i=0;i<navChild.length;i++)
 let kontakt = document.querySelector('.kontakt');
 let oNas = document.querySelector('.oNas');
 
-kontakt.addEventListener("click", toBottom());
-oNas.addEventListener("click", toBottom());
+kontakt.addEventListener("click", toBottom);
+oNas.addEventListener("click", toBottom);
 
 function toBottom(){
     window.scrollTo(0,document.body.scrollHeight);
 }
-
 
 
 
