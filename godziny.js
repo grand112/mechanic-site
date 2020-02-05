@@ -6,7 +6,7 @@ godz.addEventListener('click', function () {
         <table class="table table-dark col-6">
             <thead>
                 <tr>
-                    <th scope="col">Dzień tygodnie</th>
+                    <th scope="col">Dzień tygodnia</th>
                     <th scope="col">Otwarcie</th>
                     <th scope="col">Zamknięcie</th>
                 </tr>
