@@ -17,14 +17,9 @@ body{
 .search{
     color:white;
     background-color:black;
-    float: right;
-    padding:2%;
-    margin-top:5%;
-    margin-right:4%;
     border-style: solid;
     border-width: 1px;
     border-color: #DF0202;
-    width:25%;
 }
 
 .lista{
@@ -32,48 +27,24 @@ body{
 }
 
 .link{
-    margin-left:2%;
-    padding:1%;
-    text-align: center;
-    width: 14%;
-    font-size: 25px;
     color:grey;
-    float:left;
-    display: block;
-    text-align: center;
 }
 
 .name{
-    margin-left:3%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    float:left;
+    text-align: center;
     color:white;
-    font-size: 181%;
     font-family: Stencil Std, fantasy;
     text-shadow: 5px 5px black;
-    text-decoration: none;
-    text-align: center;
 }
 
-.logo{
-    margin-top:5%;
-    float:left;
-    width:8%;
-}
-
-img{
-    width:100%;
+.img{
+    width:40%;
 }
 
 .mid {
     height:800px;
     background-color: #090706;
     float: left;
-    margin-top:2%;
-    margin-right:3%;
-    margin-left:3%;
-    width:94%;
     border-style: solid;
     border-width: 1px;
     border-color: #DF0202;
@@ -85,64 +56,13 @@ img{
     border-color: #DF0202;
     background-color: #090706;
     float:left;
-    margin-top:2%;
-    margin-bottom:2%;
-    margin-left: 3%;
-    width:94%;
+    width:100%;
     color:white;
 }
 
-@media (max-width: 1200px){
-    .link{
-        font-size: 20px;
-    }
-    img{
-        width:120%;
-    }
-}
-
-@media (max-width: 900px){
-    .menu{
+@media (max-width: 780px){
+    .logo{
         display: none;
     }
-    .name{
-        font-size: 150%;
-    }
-    .logo{
-        margin-top:6%
-    }
-    img{
-        width:140%;
-    }
 }
 
-
-@media (max-width: 530px){
-    .name{
-        font-size: 125%;
-    }
-    .logo{
-        margin-top:7%
-    }
-    img{
-        width:160%;
-    }
-}
-
-@media (max-width: 430px){
-    .logo{
-        margin-top:8%
-    }
-    img{
-        width:180%;
-    }
-}
-
-@media (max-width: 350px){
-    .logo{
-        margin-top:9%
-    }
-    img{
-        width:200%;
-    }
-}
