@@ -12,7 +12,6 @@ body{
     float:left;
     width: 100%;
     background-color: #090706;
-    
 }
 
 .search{
@@ -25,6 +24,7 @@ body{
     border-style: solid;
     border-width: 1px;
     border-color: #DF0202;
+    width:25%;
 }
 
 .lista{
@@ -32,11 +32,11 @@ body{
 }
 
 .link{
-    margin-top:1%;
-    margin-bottom:1%;
     margin-left:2%;
+    padding:1%;
+    text-align: center;
     width: 14%;
-    font-size: 150%;
+    font-size: 25px;
     color:grey;
     float:left;
     display: block;
@@ -56,10 +56,14 @@ body{
     text-align: center;
 }
 
-img{
+.logo{
+    margin-top:5%;
     float:left;
     width:8%;
-    margin-top:4%;
+}
+
+img{
+    width:100%;
 }
 
 .mid {
@@ -86,4 +90,59 @@ img{
     margin-left: 3%;
     width:94%;
     color:white;
+}
+
+@media (max-width: 1200px){
+    .link{
+        font-size: 20px;
+    }
+    img{
+        width:120%;
+    }
+}
+
+@media (max-width: 900px){
+    .menu{
+        display: none;
+    }
+    .name{
+        font-size: 150%;
+    }
+    .logo{
+        margin-top:6%
+    }
+    img{
+        width:140%;
+    }
+}
+
+
+@media (max-width: 530px){
+    .name{
+        font-size: 125%;
+    }
+    .logo{
+        margin-top:7%
+    }
+    img{
+        width:160%;
+    }
+}
+
+@media (max-width: 430px){
+    .logo{
+        margin-top:8%
+    }
+    img{
+        width:180%;
+    }
+}
+
+@media (max-width: 350px){
+    .logo{
+        margin-top:9%
+    }
+    img{
+        width:200%;
+    }
 }
