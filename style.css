@@ -2,7 +2,6 @@ body{
     background-image: url("https://images.pond5.com/glowing-red-triangle-polygons-background-footage-071472630_prevstill.jpeg");
     background-size: cover; 
     background-position: center center;
-
 }
 
 .menu{
@@ -10,7 +9,6 @@ body{
     border-width: 1px;
     border-color: #DF0202;
     float:left;
-    width: 100%;
     background-color: #090706;
 }
 
@@ -44,7 +42,6 @@ body{
 .mid {
     height:800px;
     background-color: #090706;
-    float: left;
     border-style: solid;
     border-width: 1px;
     border-color: #DF0202;
@@ -55,8 +52,6 @@ body{
     border-width: 1px;
     border-color: #DF0202;
     background-color: #090706;
-    float:left;
-    width:100%;
     color:white;
 }
 
