@@ -2,11 +2,11 @@ let godz = document.querySelector('.godziny');
 let mid2 = document.querySelector('.mid');
 
 godz.addEventListener('click', function () {
-    mid2.innerHTML =`
+    mid2.innerHTML =`<div class="d-flex justify-content-center  align-items-center container px-4 py-4 my-4">
         <table class="table table-dark col-6">
             <thead>
                 <tr>
-                    <th scope="col">Dzień tygodnie</th>
+                    <th scope="col">Dzień tygodnia</th>
                     <th scope="col">Otwarcie</th>
                     <th scope="col">Zamknięcie</th>
                 </tr>
@@ -51,5 +51,6 @@ godz.addEventListener('click', function () {
 
             </tbody>
         </table>
-        ;`
+        </div>
+        `
 });
