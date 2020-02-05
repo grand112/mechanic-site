@@ -1,6 +1,5 @@
 1. Wyszukiwarka ma sie doklejac do prawej a nie do lewej 
 2. Menu ma jakis problem z prawym marginesem (przy zmniejszeniu rozdzielczosci skleja sie z prawa sciana
-3. Mid ma wykurwione w prawy margines
-4. Logo ponizej 780 px szerokosci robi sie za male (zrobilem display none, mozna pomyslec cos nad tym)
-5. przy zmniejszaniu stopka tez jakos dziwnie skaluje prawy margines
+już ok (Use .container-fluid for a full width container, spanning the entire width of the viewport.)
+3. Logo ponizej 780 px szerokosci robi sie za male (zrobilem display none, mozna pomyslec cos nad tym)
 
