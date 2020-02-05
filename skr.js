@@ -12,6 +12,13 @@ for(let i=0;i<navChild.length;i++)
     });
 }
 
+let home = document.querySelector(".home");
+home.addEventListener("click", rel);
+function rel(){
+    window.location.reload(true);
+}
+
+
 let kontakt = document.querySelector('.kontakt');
 let oNas = document.querySelector('.oNas');
 
