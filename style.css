@@ -52,7 +52,7 @@ body{
     width:110px;
 }
 
-.more,.less{
+.more,.less,.link{
     cursor: pointer;
 }
 
