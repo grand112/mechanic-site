@@ -13,7 +13,7 @@ const naglowek = `
             </div>
            `;
 const content = `     
-                    <div class="akt ">
+                    <div class="akt container px-4 py-4 mx-auto my-4">
                         <div class="wpis row">
                             <div class="foto col-md-4 mb-2 d-flex justify-content-center" >
                                 <img class ="doWpisu" src="${foto}">
