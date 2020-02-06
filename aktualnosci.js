@@ -1,9 +1,17 @@
-let akt = document.querySelector('.mid');
-let date = new Date()
+//zmienne z trescia do postow
+const akt = document.querySelector('.mid');
+const date = new Date()
 let title = "Wybrano pracownika miesiąca"
 let tresc = "To powinno być skądś pobierane a nie, że se piszemy tak o w js wpisy. Nwm jescze jak to zrobić. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+let more = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
 let place = "Kraków";
-let content = `
+let header = "Aktualności";
+const naglowek = `
+            <div class="d-flex justify-content-center w-100 h1 mt-2 text-white">
+                ${header}
+            </div>
+           `;
+const content = `     
                     <div class="akt container px-4 py-4 mx-auto my-4">
                         <div class="wpis row">
                             <div class="foto col-md-4 mb-2 d-flex justify-content-center" >
@@ -16,8 +24,10 @@ let content = `
                                 <div class ="tresc px-3 py-3 text-justify">
                                     <hr>
                                     ${tresc}
+                                    <span class="more"><br><u>Czytaj więcej</u></span>
+                                    <span class="moreContent"><br>${more}</span>
+                                    <span class="less"><u>Czytaj mniej</u></span>
                                     <hr>
-                                    <button type="button" class="btn btn-secondary float-right">czytaj więcej (nie dziala narazie)</button>
                                 </div>
                                 <div class="data px-3">
                                     <hr>
@@ -28,19 +38,36 @@ let content = `
                         </div>
                     </div>
                 `;
-let button = `<div class="wiecej float-right mx-3 mb-3 ">
-                <button type="button" class="btn btn-dark">Wyświetl wiecej (osocha do nieskonczonosci)</button>
+const button = `<div class="wiecej float-right mx-3 mb-3 ">
+                <button type="button" class="btn btn-dark">Wyświetl wiecej postów</button>
               </div>
               `;
 
+// wyswietlenie posta po wczytaniu
 (function () {
-    akt.innerHTML = content+button;
+    akt.innerHTML = naglowek+content+button;
 })();
 
-let wpis = document.querySelector('.akt');
-let wiecej = document.querySelector('.wiecej');
+// przycisk dodajacy wiecej wpisow
+const wpis = document.querySelector('.akt');
+const wiecej = document.querySelector('.wiecej');
 wiecej.addEventListener("click", function(){
     wpis.insertAdjacentHTML('afterend', content)
 });
-    
 
+//przycisk czytaj wiecej
+const readMore = document.querySelector('.more');
+const moreContent = document.querySelector('.moreContent');
+const readLess = document.querySelector('.less');
+readMore.addEventListener("click", function(){
+    readMore.style.display="none";
+    moreContent.style.display="block";
+    readLess.style.display="block";
+});
+
+//przycisk czytaj mniej
+readLess.addEventListener("click", function(){
+    readMore.style.display="block";
+    moreContent.style.display="none"
+    readLess.style.display="none";
+});
