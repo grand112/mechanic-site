@@ -26,6 +26,13 @@ body{
     border-color: rgb(0, 0, 0);
 }
 
+.godz{
+    background-color: rgb(185, 183, 179);
+    border: 1px solid red;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
 .lista{
     list-style-type: none;
     color:grey;
@@ -43,6 +50,7 @@ body{
     font-family: Stencil Std, fantasy;
     text-shadow: 5px 5px black;
 }
+
 
 .img{
     width:110px;

@@ -2,7 +2,14 @@ let godz = document.querySelector('.godziny');
 let mid2 = document.querySelector('.mid');
 
 godz.addEventListener('click', function () {
-    mid2.innerHTML =`<div class="d-flex justify-content-center  align-items-center container px-4 py-4 my-4">
+    mid2.innerHTML =`
+
+    <div class="d-flex justify-content-center w-100 h1 mt-2 text-white">
+                Godziny otwarcia
+            </div>
+
+    
+    <div class="d-flex justify-content-center  align-items-center godz container">
         <table class="table table-dark col-6">
             <thead>
                 <tr>
@@ -52,5 +59,6 @@ godz.addEventListener('click', function () {
             </tbody>
         </table>
         </div>
+      
         `
 });
