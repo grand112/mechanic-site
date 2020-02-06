@@ -8,7 +8,7 @@ body{
     background-position: center center;
 }
 
-.menu,.search,.mid,.bottom,.opis,.akt{
+.menu,.mid,.bottom,.opis,.akt{
     border-style: solid;
     border-width: 1px;
     border-color: #DF0202;
@@ -24,10 +24,6 @@ body{
     border-style: solid;
     border-width: 1px;
     border-color: rgb(0, 0, 0);
-}
-
-.search{
-    color:white;
 }
 
 .lista{
@@ -50,6 +46,10 @@ body{
 
 .img{
     width:110px;
+}
+
+.magnifier{
+    width:18px;
 }
 
 .more,.less,.link{
