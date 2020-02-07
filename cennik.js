@@ -1,3 +1,4 @@
+//pobranie elementu z menu o klasie cennik i dodanie do niego zdarzenia kliknięcia, które wstawia treść do mida
 let cen = document.querySelector('.cennik');
 
 cen.addEventListener('click', function () {

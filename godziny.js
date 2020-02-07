@@ -1,3 +1,4 @@
+//pobranie elementu z menu o klasie godziny i dodanie do niego zdarzenia kliknięcia, które wstawia treść do mida
 let godz = document.querySelector('.godziny');
 
 godz.addEventListener('click', function () {
