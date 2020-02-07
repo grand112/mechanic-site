@@ -1,2 +1,3 @@
-
-
+przycsik dodajacy posty w aktualnosciach powinien byc na gorze
+wyszukiwarka wyszukuje slowo ale nie pokazuje gdzie
+zastapic menu gorne dla mniejszych rozdzielczosci hamburgerem 
