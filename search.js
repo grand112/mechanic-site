@@ -49,14 +49,14 @@ magnifier.addEventListener("click",function(){
     }
 
     //wyniki wyszukiwania wyswietlane w midzie
-    mid.innerHTML = `
+    /* mid.innerHTML = `
                         <div class="d-flex justify-content-center w-100 h1 mt-2 text-white">
                             Wyniki wyszukiwania dla "${word}":
                         </div>
                         <div class ="px-3 py-3 text-justify row d-flex justify-content-center text-white">
                             ${wynik}
                         </div>
-                    `;  
+                    `;   */
     });
 
 

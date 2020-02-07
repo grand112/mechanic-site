@@ -1,8 +1,7 @@
 let godz = document.querySelector('.godziny');
-let mid2 = document.querySelector('.mid');
 
 godz.addEventListener('click', function () {
-    mid2.innerHTML =`
+    mid.innerHTML =`
 
     <div class="d-flex justify-content-center w-100 h1 mt-2 text-white">
                 Godziny otwarcia

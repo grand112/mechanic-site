@@ -1,8 +1,7 @@
 let cen = document.querySelector('.cennik');
-let mid3 = document.querySelector('.mid');
 
 cen.addEventListener('click', function () {
-    mid3.innerHTML =
+    mid.innerHTML =
     `
     <div class="d-flex justify-content-center w-100 h1 mt-2 text-white">
                 Cennik
