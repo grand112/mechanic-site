@@ -26,3 +26,6 @@ cen.addEventListener('click', function () {
 `
      
 });
+
+//przewinięcie do mida przy kliknięciu na element o klasie cennik z menu
+mid.scrollIntoView();

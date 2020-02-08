@@ -62,3 +62,6 @@ godz.addEventListener('click', function () {
       
         `
 });
+
+//przewinięcie do mida przy kliknięciu na element o klasie godziny z menu
+mid.scrollIntoView();

@@ -56,3 +56,6 @@ const naGalerie = `
 galeriaButton.addEventListener("click", function(){
     mid.innerHTML= naglowekGaleria+naGalerie;
 });
+
+//przewinięcie do mida przy kliknięciu na element o klasie galeria z menu
+mid.scrollIntoView();
