@@ -48,10 +48,10 @@ const naglowek = `
 let content = `     
                     <div class="akt container px-4 py-4 mx-auto my-4">
                         <div class="wpis row">
-                            <div class="foto col pb-4 d-flex justify-content-center" >
+                            <div class="foto col-lg pb-4 d-flex justify-content-center" >
                                 <img class ="doWpisu my-auto img-thumbnail" src="${foto}">
                             </div>
-                            <div class="opis col px-2 py-4 mr-4">
+                            <div class="opis col-lg px-2 py-4 mr-auto">
                                 <div class ="title h5 font-weight-bold text-center">
                                     ${title}
                                 </div>

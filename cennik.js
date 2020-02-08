@@ -24,8 +24,7 @@ cen.addEventListener('click', function () {
             </td><td style="text-align: right;">od 40 PLN</td></tr></tbody></table>
         </div>
 `
-     
+    //przewinięcie do mida przy kliknięciu na element o klasie cennik z menu
+    mid.scrollIntoView(); 
 });
 
-//przewinięcie do mida przy kliknięciu na element o klasie cennik z menu
-akt.scrollIntoView();

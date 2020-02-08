@@ -2,13 +2,21 @@ html{
     scroll-behavior: smooth;
 }
 
+.miniMenu{
+    z-index:99;
+}
+
+.hamburger{
+    display: none;
+}
+
 body{
     background-image: url("https://images.pond5.com/glowing-red-triangle-polygons-background-footage-071472630_prevstill.jpeg");
     background-size: cover; 
     background-position: center center;
 }
 
-.menu,.mid,.bottom,.opis,.akt{
+.menu,.mid,.bottom,.opis,.akt,.navbar-toggler,.miniLink,.hamburger{
     border-style: solid;
     border-width: 1px;
     border-color: #DF0202;
@@ -61,7 +69,7 @@ body{
     width:18px;
 }
 
-.more,.less,.link{
+.more,.less,.link,.miniMenu{
     cursor: pointer;
 }
 
@@ -87,6 +95,15 @@ body{
 @media (max-width: 450px){
     .name{
         font-size:150%;
+    }
+}
+
+@media (max-width: 660px){
+    .hamburger{
+        display: flex;
+    }
+    .menu{
+        display:none;
     }
 }
 

@@ -12,7 +12,29 @@
 
 <body>
     <div class="top">
-        
+        <div class="hamburger mt-5 pt-1 w-100">
+            <div class="text-white pt-3 h4 ml-4">
+                Menu
+            </div>
+            <nav class="navbar navbar-dark mb-2">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuRozwijane">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
+            <div class="collapse position-absolute mt-1" id="menuRozwijane">
+                <div>
+                    <ul class="list-group ml-5 position-absolute miniMenu text-center text-white mt-5">
+                        <li class="list-group-item home miniLink">Home</li>
+                        <li class="list-group-item oferta miniLink">Oferta</li>
+                        <li class="list-group-item cennik miniLink">Cennik</li>
+                        <li class="list-group-item godziny miniLink">Godziny otwarcia</li>
+                        <li class="list-group-item galeria miniLink">Galeria</li>
+                        <li class="list-group-item oNas miniLink">O nas</li>
+                        <li class="list-group-item kontakt miniLink">Kontakt</li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
         <div class="row container mx-auto">
             <div class="name col my-5  mr-2 d-flex justify-content-center">
                 <a class="name display-4 home" href="#">Darex mechanic</a>
@@ -20,10 +42,10 @@
             <div class="logo col my-4 pl-0 d-flex justify-content-center">
                 <img class="img" src="https://www.pikpng.com/pngl/b/48-484709_tools-logo-png-system-mechanic-logo-clipart.png">
             </div>
-            <div class="search col-auto my-auto pb-2">
+            <div class="search col-auto my-auto pb-2 ">
                 <form>
                     <div class="row no-gutters">
-                        <div class="col-auto">
+                        <div class="col-auto ml-5">
                             <input class="form-control form-control form-control-borderless wyszukaj" type="search" placeholder="Czego szukasz?"/>
                         </div>
                         <div class="col-auto">
@@ -32,23 +54,6 @@
                     </div>
                 </form>
             </div>
-            <!-- <div class="hamburger col-auto my-auto">
-                <nav class="navbar navbar-dark">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuRozwijane">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </nav>
-                <div class="collapse" id="menuRozwijane">
-                    <div class="bg-dark p-4">
-                      <ul>
-                          <li>Siema</li>
-                      </ul>
-                    </div>
-                </div> 
-                <button class="btn btn-link" data-toggle="collapse" data-target="#menuRozwijane" aria-expanded="true" aria-controls="collapseOne">
-                    Collapsible Group Item #1
-                  </button>
-            </div> -->
         </div>
         <div class="menu container-fluid w-100">
                 <ul class="lista row h3 my-1 mb-0 px-4">
@@ -67,7 +72,7 @@
                     <li class="col d-flex justify-content-center my-3">
                         <a class="link galeria">Galeria</a>
                     </li>
-                    <li class="col d-flex justify-content-center my-3">
+                    <li class="col d-flex justify-content-center my-3 ">
                         <a class="link oNas">O nas</a>
                     </li>
                     <li class="col d-flex justify-content-center my-3">
@@ -131,8 +136,8 @@
     <script type="text/javascript" src=aktualnosci.js></script>
     <script type="text/javascript" src=galeria.js></script>
     <script type="text/javascript" src=godziny.js></script>
-    <script type="text/javascript" src=cennik.js></script>
     <script type="text/javascript" src=search.js></script>
+    <script type="text/javascript" src=cennik.js></script>
     <script type="text/javascript" src=oferta.js></script>
 </body>
 
