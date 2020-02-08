@@ -47,6 +47,9 @@ const naGalerie = `
                             <div class="col-lg-3 col-md-4 col-6 mb-4 d-block">
                                     <img class="img-thumbnail" src="https://hips.hearstapps.com/pop.h-cdn.co/assets/cm/15/05/54caa0df15d7e_-_pmgarageshot_400_0410-de.jpg" alt="">
                             </div>
+                            <div class="embed-responsive embed-responsive-16by9 col-12">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                     </div>
@@ -58,4 +61,4 @@ galeriaButton.addEventListener("click", function(){
 });
 
 //przewinięcie do mida przy kliknięciu na element o klasie galeria z menu
-mid.scrollIntoView();
+akt.scrollIntoView();

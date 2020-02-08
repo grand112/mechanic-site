@@ -80,7 +80,7 @@ const button = `<div class="wiecej float-right mx-3 mb-3 ">
 // wyswietlenie posta po wczytaniu
 (function () {
     //przewinięcie do mida
-    mid.scrollIntoView();
+    akt.scrollIntoView();
     akt.innerHTML = naglowek+content+button;
 })();
 
