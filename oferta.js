@@ -96,7 +96,7 @@ for(let i=0;i<karta.length;i++)
     });
 }
 
-
+//przewinięcie do mida przy kliknięciu na element o klasie oferta z menu
 mid.scrollIntoView();
 
 }
