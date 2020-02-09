@@ -6,6 +6,10 @@ html{
     z-index:99;
 }
 
+.basketImg{
+    height: 50px;
+}
+
 .hamburger{
     display: none;
 }
@@ -16,13 +20,18 @@ body{
     background-position: center center;
 }
 
-.menu,.mid,.bottom,.opis,.akt,.navbar-toggler,.miniLink,.hamburger{
+.menu,.mid,.bottom,.opis,.akt,.navbar-toggler,.miniLink,.hamburger,.koszykBorder{
     border-style: solid;
     border-width: 1px;
     border-color: #DF0202;
     background-color: #090706;
 }
 
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+ 
 .akt{
     background-color: rgb(83, 83, 88);
     color:white;
@@ -98,7 +107,7 @@ body{
     }
 }
 
-@media (max-width: 660px){
+@media (max-width: 768px){
     .hamburger{
         display: flex;
     }
