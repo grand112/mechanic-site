@@ -96,7 +96,7 @@ wiecej.addEventListener("click", function(){
                     <div class="akt container px-4 py-4 mx-auto my-4">
                         <div class="wpis row">
                             <div class="foto col pb-4 d-flex justify-content-center" >
-                                <img class ="doWpisu my-auto" src="${foto}">
+                                <img class ="doWpisu my-auto img-thumbnail" src="${foto}">
                             </div>
                             <div class="opis col px-2 py-4 mr-4">
                                 <div class ="title h5 font-weight-bold text-center">
