@@ -23,13 +23,18 @@ for(let i=0;i<home.length;i++)
 }
 
 // po wybaniu opcji kontakt lub oNas w menu strona przekierwoywuje nas do stopki
-let kontakt = document.querySelector('.kontakt');
-let oNas = document.querySelector('.oNas');
-kontakt.addEventListener("click", toBottom);
-oNas.addEventListener("click", toBottom);
-function toBottom(){
-    window.scrollTo(0,document.body.scrollHeight);
+let kontakt = document.querySelectorAll('.kontakt');
+let oNas = document.querySelectorAll('.oNas');
+
+for(let i=0;i<kontakt.length;i++)
+{
+    kontakt[i].addEventListener("click", toBottom);
+    oNas[i].addEventListener("click", toBottom);
+    function toBottom(){
+        window.scrollTo(0,document.body.scrollHeight);
+    }
 }
+
 
 
 

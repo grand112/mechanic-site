@@ -30,74 +30,79 @@ let naglowki=["Diagnostyka samochodowa","Naprawa układu hamulcowego","Naprawa u
 
 //po kliknieciu w element z menu o klasie oferta karty zostają wyświetlone w midzie ale tylko częściowo
 
-let oferta = document.querySelector('.oferta');
+let oferta = document.querySelectorAll('.oferta');
 
-oferta.addEventListener('click', function () {
-    mid.innerHTML =
-`
-<div class="d-flex justify-content-center w-100 h1 mt-2 text-white">
-Oferta
-</div>
-
-        <div class="container d-flex justify-content-around godz">
-            <div class="row justify-content-center" >
-
-                <div class="col-lg-4 col-sm-12 col-md-6">
-                    <div class="karta text-white card bg-secondary mb-1 mx-5" style="max-width: 18rem;">
-                        <div class="card-header">${naglowki[0]}</div>
-                        <div class="card-body">
-                            <p class="card-text">${czesci[0]}</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-sm-12  col-md-6">
-                    <div class="karta text-white card bg-secondary mb-1 mx-5" style="max-width: 18rem;">
-                        <div class="card-header">${naglowki[1]}</div>
-                        <div class="card-body">
-                            <p class="card-text">${czesci[1]}</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-sm-12  col-md-6">
-                    <div class="karta text-white card bg-secondary mb-1 mx-5" style="max-width: 18rem;">
-                        <div class="card-header">${naglowki[2]}</div>
-                        <div class="card-body">
-                            <p class="card-text">${czesci[2]}</p>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-            </div>
-        </div>
-`;
-
-
-//dodanie do kart zdarzeń które po najechaniu na nie wyświetlają całość tekstu, a po opuszceniu karty tylko część tekstu
-
-let karta = document.querySelectorAll('.karta');
-for(let i=0;i<karta.length;i++)
+for (let i=0; i<oferta.length;i++)
 {
-    karta[i].addEventListener("mousemove", function (){
-        karta[i].innerHTML =`<div class="card-header">${naglowki[i]}</div>
-        <div class="card-body">
-            <p class="card-text">${teksty[i]}</p>
-        </div>`
-    });
-
-    karta[i].addEventListener("mouseout", function (){
-        karta[i].innerHTML =`<div class="card-header">${naglowki[i]}</div>
-        <div class="card-body">
-            <p class="card-text">${czesci[i]}</p>
-        </div>`
-    });
+    oferta[i].addEventListener('click', function () {
+        mid.innerHTML =
+    `
+    <div class="d-flex justify-content-center w-100 h1 mt-2 text-white">
+    Oferta
+    </div>
+    
+            <div class="container d-flex justify-content-around godz">
+                <div class="row justify-content-center" >
+    
+                    <div class="col-lg-4 col-sm-12 col-md-6">
+                        <div class="karta text-white card bg-secondary mb-1 mx-5" style="max-width: 18rem;">
+                            <div class="card-header">${naglowki[0]}</div>
+                            <div class="card-body">
+                                <p class="card-text">${czesci[0]}</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-sm-12  col-md-6">
+                        <div class="karta text-white card bg-secondary mb-1 mx-5" style="max-width: 18rem;">
+                            <div class="card-header">${naglowki[1]}</div>
+                            <div class="card-body">
+                                <p class="card-text">${czesci[1]}</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-sm-12  col-md-6">
+                        <div class="karta text-white card bg-secondary mb-1 mx-5" style="max-width: 18rem;">
+                            <div class="card-header">${naglowki[2]}</div>
+                            <div class="card-body">
+                                <p class="card-text">${czesci[2]}</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+    
+                </div>
+            </div>
+    `;
+    
+    
+    //dodanie do kart zdarzeń które po najechaniu na nie wyświetlają całość tekstu, a po opuszceniu karty tylko część tekstu
+    
+    let karta = document.querySelectorAll('.karta');
+    for(let i=0;i<karta.length;i++)
+    {
+        karta[i].addEventListener("mousemove", function (){
+            karta[i].innerHTML =`<div class="card-header">${naglowki[i]}</div>
+            <div class="card-body">
+                <p class="card-text">${teksty[i]}</p>
+            </div>`
+        });
+    
+        karta[i].addEventListener("mouseout", function (){
+            karta[i].innerHTML =`<div class="card-header">${naglowki[i]}</div>
+            <div class="card-body">
+                <p class="card-text">${czesci[i]}</p>
+            </div>`
+        });
+    }
+    
+    //przewinięcie do mida przy kliknięciu na element o klasie oferta z menu
+    mid.scrollIntoView();
+    
+    }
+    );
 }
 
-//przewinięcie do mida przy kliknięciu na element o klasie oferta z menu
-mid.scrollIntoView();
 
-}
-);

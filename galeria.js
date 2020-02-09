@@ -1,5 +1,5 @@
 // dane do galerii
-const galeriaButton = document.querySelector('.galeria');
+const galeriaButton = document.querySelectorAll('.galeria');
 const headerGalleria = "Galeria";
 
 const naglowekGaleria = `
@@ -56,9 +56,13 @@ const naGalerie = `
                   `;
 
 //zmiana mida po wcisnieciu buttona galeria
-galeriaButton.addEventListener("click", function(){
-    mid.innerHTML= naglowekGaleria+naGalerie;
-//przewinięcie do mida przy kliknięciu na element o klasie galeria z menu
-akt.scrollIntoView();
-});
+for(let i=0;i<galeriaButton.length;i++)
+{
+        galeriaButton[i].addEventListener("click", function(){
+                mid.innerHTML= naglowekGaleria+naGalerie;
+            //przewinięcie do mida przy kliknięciu na element o klasie galeria z menu
+            akt.scrollIntoView();
+            });
+}
+
 
