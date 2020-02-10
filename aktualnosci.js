@@ -45,98 +45,85 @@ const naglowek = `
                 ${header}
             </div>
            `;
-let content = `     
-                    <div class="akt container px-4 py-4 mx-auto my-4">
-                        <div class="wpis row">
-                            <div class="foto col-lg pb-4 d-flex justify-content-center" >
-                                <img class ="doWpisu my-auto img-thumbnail" src="${foto}">
-                            </div>
-                            <div class="opis col-lg px-2 py-4 mr-auto">
-                                <div class ="title h5 font-weight-bold text-center">
-                                    ${title}
-                                </div>
-                                <div class ="tresc px-3 py-3 text-justify float-left">
-                                    <hr>
-                                    ${tresc}
-                                    <span class="more"><br><u>Czytaj więcej</u></span>
-                                    <span class="moreContent"><br>${more}</span>
-                                    <span class="less"><u>Czytaj mniej</u></span>
-                                    <hr>
-                                </div>
-                                <div class="data px-3">
-                                    <hr>
-                                    ${date.getDate()}.${date.getMonth()+1}.${date.getFullYear()}r. <br>
-                                    ${place}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
 const button = `<div class="wiecej float-right mx-3 mb-3 ">
-                <button type="button" class="btn btn-dark">Wyświetl wiecej postów</button>
+                <button type="button" class="btn btn-dark">Wyświetl starszy post</button>
               </div>
               `;
 
 // wyswietlenie posta po wczytaniu
 (function () {
-    akt.innerHTML = naglowek+content+button;
+    akt.innerHTML = naglowek+button;
 })();
 
 
 // przycisk dodajacy wiecej wpisow
 // kazdy dodany wpis ma inny obraz, tutul oraz jest starszy o jeden dzien od poprzednika
 const naglowekClass = document.querySelector('.naglowek')
-const wiecej = document.querySelector('.wiecej');
+const wiecej = document.querySelectorAll('.wiecej');
 let older = date.getDate();
-wiecej.addEventListener("click", function(){
-    older = --older;
-    randomImage();
-    randomTitle();
-    content = `     
-                    <div class="akt container px-4 py-4 mx-auto my-4">
-                        <div class="wpis row">
-                            <div class="foto col pb-4 d-flex justify-content-center" >
-                                <img class ="doWpisu my-auto img-thumbnail" src="${foto}">
-                            </div>
-                            <div class="opis col px-2 py-4 mr-4">
-                                <div class ="title h5 font-weight-bold text-center">
-                                    ${title}
-                                </div>
-                                <div class ="tresc px-3 py-3 text-justify float-left">
-                                    <hr>
-                                    ${tresc}
-                                    <span class="more"><br><u>Czytaj więcej</u></span>
-                                    <span class="moreContent"><br>${more}</span>
-                                    <span class="less"><u>Czytaj mniej</u></span>
-                                    <hr>
-                                </div>
-                                <div class="data px-3">
-                                    <hr>
-                                    ${older}.${date.getMonth()+1}.${date.getFullYear()}r. <br>
-                                    ${place}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-    naglowekClass.insertAdjacentHTML('afterend', content);
-});
+window.onload = function(){
+    wiecej[0].click();
+}
+for(let i=0;i<wiecej.length;i++)
+{
+    wiecej[i].addEventListener("click", function(){
+        older = --older;
+        randomImage();
+        randomTitle();
+        akt.scrollIntoView();
+        naglowekClass.insertAdjacentHTML('afterend', `     
+                                                        <div class="akt container px-4 py-4 mx-auto my-4 nowy">
+                                                            <div class="wpis row">
+                                                                <div class="foto col pb-4 d-flex justify-content-center" >
+                                                                    <img class ="doWpisu my-auto img-thumbnail" src="${foto}">
+                                                                </div>
+                                                                <div class="opis col px-2 py-4 mr-4">
+                                                                    <div class ="title h5 font-weight-bold text-center">
+                                                                        ${title}
+                                                                    </div>
+                                                                    <div class ="tresc px-3 py-3 text-justify float-left">
+                                                                        <hr>
+                                                                        ${tresc}
+                                                                        <span class="more"><br><u>Czytaj więcej</u></span>
+                                                                        <span class="moreContent"><br>${more}</span>
+                                                                        <span class="less"><u>Czytaj mniej</u></span>
+                                                                        <hr>
+                                                                    </div>
+                                                                    <div class="data px-3">
+                                                                        <hr>
+                                                                        ${older}.${date.getMonth()+1}.${date.getFullYear()}r. <br>
+                                                                        ${place}
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      `);
+        //przycisk czytaj wiecej
+        const readMore = document.querySelectorAll('.more');
+        const moreContent = document.querySelectorAll('.moreContent');
+        const readLess = document.querySelectorAll('.less');
+        
+        for(let j=0;j<readMore.length;j++)
+        {
+            readMore[j].addEventListener("click", function(){
+                readMore[j].style.display="none";
+                moreContent[j].style.display="block";
+                readLess[j].style.display="block";
+            });
+    
+            //przycisk czytaj mniej
+            readLess[j].addEventListener("click", function(){
+                readMore[j].style.display="block";
+                moreContent[j].style.display="none"
+                readLess[j].style.display="none";
+            });
+        }
+    });
+}
 
 
 
-//przycisk czytaj wiecej
-const readMore = document.querySelector('.more');
-const moreContent = document.querySelector('.moreContent');
-const readLess = document.querySelector('.less');
-readMore.addEventListener("click", function(){
-    readMore.style.display="none";
-    moreContent.style.display="block";
-    readLess.style.display="block";
-});
 
-//przycisk czytaj mniej
-readLess.addEventListener("click", function(){
-    readMore.style.display="block";
-    moreContent.style.display="none"
-    readLess.style.display="none";
-});
+
+
+
