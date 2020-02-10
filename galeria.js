@@ -3,6 +3,7 @@ const galeriaButton = document.querySelectorAll('.galeria');
 const headerGalleria = "Galeria";
 //tabela ze zdj
 //divy generwane dynamicznie w zaleznosci od ilosci zdj w tablicy
+//wystarczy dodac link do tablicy i strona zmieni sie dynamicznie
 let img = [
         "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/the-mechanics-workshop-paul-freidlund.jpg",
         "https://www.cassarautomotive.com.au/wp-content/uploads/2019/01/new-cassar-automotive-mechanic-workshop-2-s-847x460.jpg",
@@ -64,26 +65,35 @@ for(let i=0;i<galeriaButton.length;i++)
             akt.scrollIntoView();
 
             //powiekszanie zdj
-            //jezeli klikniemy na miniaturke zdjecia i jej numer zostaje pobrany i wyswietlane zostaje zdj powiekszone zgodne z numerem miniatury
-            //po wcisnieciu innej miniatury zdj powiekszone zostaje podmienione na wybrana miniature
-            //tak mi sie marzy xD
-            let miniFoto =document.querySelectorAll('.miniFoto');
-            for(let z=0;z<miniFoto.length;z++)
-            {   
-                    miniFoto[z].addEventListener("click",function(){
+            //utworzono 2 tablice z selektorami miniatur i zdj powiekszonych
+            //po wcisnieciu miniatury wyswietlane jest zdj piwekszone zgodne z miniatura
+            //po wcisnieciu innej miniatury zdj powiekszone zostaje podmienione
+            let selectorsSmall = [];
+            let selectorsBig = [];
+
+            const bigFoto = document.querySelector('.bigFoto');
+            for(let a=0;a<img.length;a++)
+            {
+                //dodawanie querySelectorow to tablic
+                selectorsSmall.push(document.querySelector(`.imgSmall${[a]}`));
+                selectorsBig.push(document.querySelector(`.imgBig${[a]}`));
+                 
+                // wszystkie zdj powiekszone sa chowane
+                selectorsBig[a].style.display="none";
                         
-                    });
+                //obsluga klikniecia miniatury
+                selectorsSmall[a].addEventListener("click", function(){
+                        // wszystkie zdj powiekszone sa chowane
+                        for(let b=0;b<img.length;b++)
+                        {
+                                selectorsBig[b].style.display="none";
+                        }
+                        // zostaje wyswietlone tylko to zdj powiekszone ktore jest zgodne z klikneta miniatura
+                        selectorsBig[a].style.display="block";
+                        //scroll automarycznie do powiekszonego zdj
+                        bigFoto.scrollIntoView();
+                });
             }
-
-
-            let imgSmall1 = document.querySelector('.imgSmall1');
-            let imgBig1 = document.querySelector('.imgBig1');
-            imgSmall1.addEventListener("click",function (){
-                imgBig1.style.display="block";
-                console.log("tak");
-            });
-
-            
         });
 }
 

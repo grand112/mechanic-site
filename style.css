@@ -2,10 +2,6 @@ html{
     scroll-behavior: smooth;
 }
 
-.imgBig0,.imgBig1,.imgBig2,.imgBig3,.imgBig4,.imgBig5,.imgBig6,.imgBig7,.imgBig8,.imgBig9,.imgBig10,.imgBig11{
-    display:none;
-}
-
 .miniMenu{
     z-index:99;
 }
