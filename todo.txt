@@ -1,4 +1,0 @@
-przycsik dodajacy posty w aktualnosciach powinien byc na gorze
-wyszukiwarka wyszukuje slowo ale nie pokazuje gdzie
-strona z produktami (np sprzeglo itd)
-koszyk w ktorym dodaja sie produkty

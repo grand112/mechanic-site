@@ -32,7 +32,6 @@ magnifier.addEventListener("click",function(){
     splittedHTML = mid.textContent.split(" ");
     // domyslny wynik to brak wyszukanej frazy
     wynik = "Niestety, nic nie znaleziono."
-    console.log("ni ma");
     //porownanie szukanej frazy z zawartoscia mida
     // jezeli szukana fraza zostanie znaleziona nadpisywany jest wynik ktory domyslnie wyswietlal brak szukanej frazy
     for(let i=0;i<splittedHTML.length;i++)
@@ -41,8 +40,7 @@ magnifier.addEventListener("click",function(){
         {
             if(splittedWord[j]===splittedHTML[i])
             {
-                wynik = "no jest takie xD tylko ze nwm jak wyswietlic miejsce w ktorym ono jest";
-                console.log("jest");
+                wynik = "znaleziono szukane slowo. (wyswietlanie artykulu w ktorym znaleziono slowo - do zrobienia)";
             }
         }
         
