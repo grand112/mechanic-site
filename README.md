@@ -1,3 +1,3 @@
 # repo
 
-jest to potężna strona serwisu samochodowego
+strona serwisu samochodowego
