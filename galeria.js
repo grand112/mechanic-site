@@ -28,7 +28,7 @@ for(let i=0;i<galeriaButton.length;i++)
                                 </div>
                                 `;
 
-                // generowanie nowego diva dla kazdego zdj z tabeli w powiekszeniu
+                // generowanie nowego diva dla kazdego zdj z tabeli w powiekszeniu.
                 for(let j=0;j<img.length;j++)
                 {
                         mid.insertAdjacentHTML('beforeend', `
