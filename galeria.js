@@ -6,7 +6,7 @@ const headerGalleria = "Galeria";
 //wystarczy dodac link do tablicy i strona zmieni sie dynamicznie
 let img = [
         "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/the-mechanics-workshop-paul-freidlund.jpg",
-        "https://www.cassarautomotive.com.au/wp-content/uploads/2019/01/new-cassar-automotive-mechanic-workshop-2-s-847x460.jpg",
+        "https://i.ytimg.com/vi/bWbY-xu23co/maxresdefault.jpg",
         "https://www.envyautomotive.com.au/portals/0/WORKSHOP222.jpg?ver=2015-10-27-094617-470",
         "https://www.austinautomotive.com/wp-content/uploads/austin-automotive-shop-interior-1920x800_c.jpg",
         "https://decaturautorepairs.com/images/headers/slide1.jpg",

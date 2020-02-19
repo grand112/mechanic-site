@@ -74,7 +74,7 @@ for(let i=0;i<wiecej.length;i++)
         naglowekClass.insertAdjacentHTML('afterend', `     
                                                         <div class="akt container px-4 py-4 mx-auto my-4 nowy">
                                                             <div class="wpis row">
-                                                                <div class="foto col pb-4 d-flex justify-content-center" >
+                                                                <div class="foto col-auto pb-4 d-flex justify-content-center" >
                                                                     <img class ="doWpisu my-auto img-thumbnail" src="${foto}">
                                                                 </div>
                                                                 <div class="opis col px-2 py-4 mr-4">
